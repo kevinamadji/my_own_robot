@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230121 14:10:52.465" rpa="false" schemaversion="3">
+<suite id="s1" name="My Own Robot" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot">
+<suite id="s1-s1" name="Projet robot 1" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests">
+<suite id="s1-s1-s1-s1" name="Autorecorder" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests\Autorecorder.robot">
+<test id="s1-s1-s1-s1-t1" name="AutoRecord" line="16">
+<kw name="Surffer sur youtube">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Navig}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230121 14:10:55.321" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20230121 14:10:55.321" endtime="20230121 14:11:00.546"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230121 14:11:00.547" endtime="20230121 14:11:00.725"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230121 14:11:05.739" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230121 14:11:00.727" endtime="20230121 14:11:05.740"/>
+</kw>
+<status status="PASS" starttime="20230121 14:10:55.315" endtime="20230121 14:11:05.740"/>
+</kw>
+<status status="PASS" starttime="20230121 14:10:55.312" endtime="20230121 14:11:05.741"/>
+</test>
+<kw name="Stop Recording Suite" library="AutoRecorder">
+<arg>My Own Robot.Projet robot 1.Tests.Autorecorder</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20230121 14:11:05.925" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230121 14:11:05.745" endtime="20230121 14:11:05.925"/>
+</kw>
+<status status="PASS" starttime="20230121 14:10:52.514" endtime="20230121 14:11:05.744"/>
+</suite>
+<status status="PASS" starttime="20230121 14:10:52.509" endtime="20230121 14:11:05.928"/>
+</suite>
+<status status="PASS" starttime="20230121 14:10:52.503" endtime="20230121 14:11:05.931"/>
+</suite>
+<status status="PASS" starttime="20230121 14:10:52.472" endtime="20230121 14:11:05.937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="My Own Robot">My Own Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projet robot 1">My Own Robot.Projet robot 1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">My Own Robot.Projet robot 1.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Autorecorder">My Own Robot.Projet robot 1.Tests.Autorecorder</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
