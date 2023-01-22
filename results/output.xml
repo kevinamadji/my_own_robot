@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230121 14:36:47.640" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230121 18:59:51.580" rpa="false" schemaversion="3">
 <suite id="s1" name="My Own Robot" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot">
 <suite id="s1-s1" name="Projet robot 1" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1">
 <suite id="s1-s1-s1" name="Tests" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests">
-<suite id="s1-s1-s1-s1" name="Selenium basic" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests\Selenium_basic.robot">
-<test id="s1-s1-s1-s1-t1" name="Reche Google" line="15">
-<kw name="Open navigateur">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL_google}</arg>
-<arg>${Browser1}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230121 14:36:47.930" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<status status="PASS" starttime="20230121 14:36:47.929" endtime="20230121 14:36:49.816"/>
+<suite id="s1-s1-s1-s1" name="String" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests\String.robot">
+<test id="s1-s1-s1-s1-t1" name="Remplacer une chaine" line="39">
+<kw name="Replace String" library="String">
+<var>${str}</var>
+<arg>Hello wold</arg>
+<arg>wold</arg>
+<arg>kevin !</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230121 18:59:51.642" level="INFO">${str} = Hello kevin !</msg>
+<status status="PASS" starttime="20230121 18:59:51.642" endtime="20230121 18:59:51.643"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230121 14:36:49.816" endtime="20230121 14:36:49.938"/>
+<kw name="Log" library="BuiltIn">
+<arg>${str}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230121 18:59:51.645" level="INFO">Hello kevin !</msg>
+<status status="PASS" starttime="20230121 18:59:51.644" endtime="20230121 18:59:51.646"/>
 </kw>
-<status status="PASS" starttime="20230121 14:36:47.915" endtime="20230121 14:36:49.939"/>
+<kw name="Replace String" library="String">
+<var>${str2}</var>
+<arg>je suis un dev</arg>
+<arg>dev</arg>
+<arg>testeur!</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230121 18:59:51.647" level="INFO">${str2} = je suis un testeur!</msg>
+<status status="PASS" starttime="20230121 18:59:51.646" endtime="20230121 18:59:51.647"/>
 </kw>
-<status status="PASS" starttime="20230121 14:36:47.913" endtime="20230121 14:36:49.940"/>
+<kw name="Log" library="BuiltIn">
+<arg>${str2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230121 18:59:51.649" level="INFO">je suis un testeur!</msg>
+<status status="PASS" starttime="20230121 18:59:51.649" endtime="20230121 18:59:51.650"/>
+</kw>
+<status status="PASS" starttime="20230121 18:59:51.640" endtime="20230121 18:59:51.652"/>
 </test>
-<doc>Test basic sur selenium</doc>
-<status status="PASS" starttime="20230121 14:36:47.685" endtime="20230121 14:36:49.944"/>
+<status status="PASS" starttime="20230121 18:59:51.627" endtime="20230121 18:59:51.654"/>
 </suite>
-<status status="PASS" starttime="20230121 14:36:47.680" endtime="20230121 14:36:49.949"/>
+<status status="PASS" starttime="20230121 18:59:51.623" endtime="20230121 18:59:51.656"/>
 </suite>
-<status status="PASS" starttime="20230121 14:36:47.676" endtime="20230121 14:36:49.952"/>
+<status status="PASS" starttime="20230121 18:59:51.619" endtime="20230121 18:59:51.659"/>
 </suite>
-<status status="PASS" starttime="20230121 14:36:47.647" endtime="20230121 14:36:49.955"/>
+<status status="PASS" starttime="20230121 18:59:51.586" endtime="20230121 18:59:51.664"/>
 </suite>
 <statistics>
 <total>
@@ -40,7 +55,7 @@
 <stat pass="1" fail="0" skip="0" id="s1" name="My Own Robot">My Own Robot</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Projet robot 1">My Own Robot.Projet robot 1</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">My Own Robot.Projet robot 1.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Selenium basic">My Own Robot.Projet robot 1.Tests.Selenium basic</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="String">My Own Robot.Projet robot 1.Tests.String</stat>
 </suite>
 </statistics>
 <errors>
