@@ -1,10 +1,10 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource     ../variable.robot
+Resource    ../variable.robot
 
 *** Keywords ***
 Charger google 
-    Go To     ${url}
+    Go To     ${uri}
     click element   //*[@id="L2AGLb"]
     wait until page contains    Google
     
@@ -12,8 +12,8 @@ Charger google
 Chercher le site amazone 
     Clear Element Text     xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input
     Input Text     xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input     amazon 
-    Mouse Down     id=hplogo
-    Mouse Out      id=hplogo
+    #Mouse Down     id=hplogo
+    #Mouse Out      id=hplogo
     Click Element     class=gNO89b
     Wait Until Page Contains     Images
 
@@ -26,6 +26,8 @@ Naviger vers le site amazon
 Rechercher un produit
     Clear Element Text     name=field-keywords
     Input Text     name=field-keywords     iphone 12
+    Click Element     xpath=//*[@id="nav-search-submit-button"]
     Wait Until Page Contains     iphone 12
+    
 
 

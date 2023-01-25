@@ -1,3 +1,3 @@
 *** Variables ***
-${url}      https://www.google.com/
+${uri}      https://www.google.com/
 ${navi}     chrome
