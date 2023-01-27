@@ -1,247 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230125 01:10:15.300" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230125 15:16:50.986" rpa="false" schemaversion="3">
 <suite id="s1" name="Main" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 2\Tests\main.robot">
 <kw name="Begin Web Test" library="common" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${navi}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230125 01:10:15.630" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230125 01:10:15.630" endtime="20230125 01:10:17.368"/>
+<msg timestamp="20230125 15:16:51.248" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230125 15:16:51.248" endtime="20230125 15:16:52.536"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230125 01:10:17.368" endtime="20230125 01:10:17.495"/>
+<status status="PASS" starttime="20230125 15:16:52.537" endtime="20230125 15:16:52.669"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:15.629" endtime="20230125 01:10:17.495"/>
+<status status="PASS" starttime="20230125 15:16:51.248" endtime="20230125 15:16:52.670"/>
 </kw>
 <test id="s1-t1" name="Voir produit disponible" line="13">
 <kw name="Charger google" library="PageAcceuil">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${uri}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230125 01:10:17.499" level="INFO">Opening url 'https://www.google.com/'</msg>
-<status status="PASS" starttime="20230125 01:10:17.499" endtime="20230125 01:10:17.931"/>
+<msg timestamp="20230125 15:16:52.670" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20230125 15:16:52.670" endtime="20230125 15:16:53.157"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="L2AGLb"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:17.931" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
-<status status="PASS" starttime="20230125 01:10:17.931" endtime="20230125 01:10:17.976"/>
+<msg timestamp="20230125 15:16:53.158" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
+<status status="PASS" starttime="20230125 15:16:53.157" endtime="20230125 15:16:53.201"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Google</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:17.976" endtime="20230125 01:10:17.989"/>
+<status status="PASS" starttime="20230125 15:16:53.202" endtime="20230125 15:16:53.214"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:17.498" endtime="20230125 01:10:17.989"/>
+<status status="PASS" starttime="20230125 15:16:52.670" endtime="20230125 15:16:53.215"/>
 </kw>
 <kw name="Chercher le site amazone" library="PageAcceuil">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230125 01:10:17.990" endtime="20230125 01:10:18.036"/>
+<status status="PASS" starttime="20230125 15:16:53.216" endtime="20230125 15:16:53.265"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
 <arg>amazon</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:18.038" level="INFO">Typing text 'amazon' into text field 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20230125 01:10:18.037" endtime="20230125 01:10:18.232"/>
+<msg timestamp="20230125 15:16:53.266" level="INFO">Typing text 'amazon' into text field 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230125 15:16:53.265" endtime="20230125 15:16:53.494"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class=gNO89b</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:18.233" level="INFO">Clicking element 'class=gNO89b'.</msg>
-<status status="PASS" starttime="20230125 01:10:18.232" endtime="20230125 01:10:19.667"/>
+<msg timestamp="20230125 15:16:53.495" level="INFO">Clicking element 'class=gNO89b'.</msg>
+<status status="PASS" starttime="20230125 15:16:53.495" endtime="20230125 15:16:55.176"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Images</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:19.667" endtime="20230125 01:10:19.686"/>
+<status status="PASS" starttime="20230125 15:16:55.176" endtime="20230125 15:16:55.220"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:17.990" endtime="20230125 01:10:19.686"/>
+<status status="PASS" starttime="20230125 15:16:53.216" endtime="20230125 15:16:55.220"/>
 </kw>
 <kw name="Naviger vers le site amazon" library="PageAcceuil">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:19.688" level="INFO">Clicking element 'xpath=//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]'.</msg>
-<status status="PASS" starttime="20230125 01:10:19.687" endtime="20230125 01:10:20.933"/>
+<msg timestamp="20230125 15:16:55.220" level="INFO">Clicking element 'xpath=//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]'.</msg>
+<status status="PASS" starttime="20230125 15:16:55.220" endtime="20230125 15:16:56.658"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Coupons</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:20.934" endtime="20230125 01:10:21.004"/>
+<status status="PASS" starttime="20230125 15:16:56.658" endtime="20230125 15:16:56.739"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:19.687" endtime="20230125 01:10:21.004"/>
+<status status="PASS" starttime="20230125 15:16:55.220" endtime="20230125 15:16:56.739"/>
 </kw>
 <kw name="Rechercher un produit" library="PageAcceuil">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>name=field-keywords</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230125 01:10:21.005" endtime="20230125 01:10:21.051"/>
+<status status="PASS" starttime="20230125 15:16:56.740" endtime="20230125 15:16:56.839"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=field-keywords</arg>
 <arg>iphone 12</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:21.051" level="INFO">Typing text 'iphone 12' into text field 'name=field-keywords'.</msg>
-<status status="PASS" starttime="20230125 01:10:21.051" endtime="20230125 01:10:21.160"/>
+<msg timestamp="20230125 15:16:56.839" level="INFO">Typing text 'iphone 12' into text field 'name=field-keywords'.</msg>
+<status status="PASS" starttime="20230125 15:16:56.839" endtime="20230125 15:16:57.088"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="nav-search-submit-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:21.160" level="INFO">Clicking element 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
-<status status="PASS" starttime="20230125 01:10:21.160" endtime="20230125 01:10:22.992"/>
+<msg timestamp="20230125 15:16:57.089" level="INFO">Clicking element 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20230125 15:16:57.088" endtime="20230125 15:16:58.745"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>iphone 12</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:22.992" endtime="20230125 01:10:23.034"/>
+<status status="PASS" starttime="20230125 15:16:58.746" endtime="20230125 15:16:58.788"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:21.005" endtime="20230125 01:10:23.034"/>
+<status status="PASS" starttime="20230125 15:16:56.740" endtime="20230125 15:16:58.788"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:17.496" endtime="20230125 01:10:23.035"/>
+<status status="PASS" starttime="20230125 15:16:52.670" endtime="20230125 15:16:58.788"/>
 </test>
 <test id="s1-t2" name="Acceder au produit" line="23">
 <kw name="Choisir un produit interressant" library="PageProduit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="sp-cc-accept"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:23.038" level="INFO">Clicking element 'xpath=//*[@id="sp-cc-accept"]'.</msg>
-<status status="PASS" starttime="20230125 01:10:23.037" endtime="20230125 01:10:23.188"/>
+<msg timestamp="20230125 15:16:58.795" level="INFO">Clicking element 'xpath=//*[@id="sp-cc-accept"]'.</msg>
+<status status="PASS" starttime="20230125 15:16:58.788" endtime="20230125 15:16:58.963"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img</arg>
+<arg>//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[6]/div/div/div/div/div[2]/div[2]/h2/a/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:23.189" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div/div/div[1]/span/a/div/img'.</msg>
-<status status="PASS" starttime="20230125 01:10:23.189" endtime="20230125 01:10:26.484"/>
+<msg timestamp="20230125 15:16:58.964" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[6]/div/div/div/div/div[2]/div[2]/h2/a/span'.</msg>
+<status status="PASS" starttime="20230125 15:16:58.963" endtime="20230125 15:17:02.206"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouter au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:26.484" endtime="20230125 01:10:26.535"/>
+<status status="PASS" starttime="20230125 15:17:02.206" endtime="20230125 15:17:02.257"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:23.037" endtime="20230125 01:10:26.535"/>
+<status status="PASS" starttime="20230125 15:16:58.788" endtime="20230125 15:17:02.258"/>
 </kw>
 <kw name="Choisir capacité iphone" library="PageProduit">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="a-autoid-17-announce"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:26.537" level="INFO">Clicking button '//*[@id="a-autoid-17-announce"]'.</msg>
-<status status="PASS" starttime="20230125 01:10:26.536" endtime="20230125 01:10:26.912"/>
+<msg timestamp="20230125 15:17:02.259" level="INFO">Clicking button '//*[@id="a-autoid-17-announce"]'.</msg>
+<status status="PASS" starttime="20230125 15:17:02.259" endtime="20230125 15:17:02.532"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>img.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230125 01:10:27.557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="img.png"&gt;&lt;img src="img.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230125 01:10:26.913" endtime="20230125 01:10:27.558"/>
+<msg timestamp="20230125 15:17:02.853" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="img.png"&gt;&lt;img src="img.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230125 15:17:02.532" endtime="20230125 15:17:02.853"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouter au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:27.558" endtime="20230125 01:10:27.589"/>
+<status status="PASS" starttime="20230125 15:17:02.853" endtime="20230125 15:17:02.936"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:26.536" endtime="20230125 01:10:27.589"/>
+<status status="PASS" starttime="20230125 15:17:02.258" endtime="20230125 15:17:02.936"/>
 </kw>
 <kw name="Ajouter iphone au panier" library="PageProduit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="add-to-cart-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:27.590" level="INFO">Clicking element '//*[@id="add-to-cart-button"]'.</msg>
-<status status="PASS" starttime="20230125 01:10:27.590" endtime="20230125 01:10:27.721"/>
+<msg timestamp="20230125 15:17:02.939" level="INFO">Clicking element '//*[@id="add-to-cart-button"]'.</msg>
+<status status="PASS" starttime="20230125 15:17:02.938" endtime="20230125 15:17:03.195"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Ajouter au panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230125 01:10:27.721" endtime="20230125 01:10:27.761"/>
+<status status="PASS" starttime="20230125 15:17:03.196" endtime="20230125 15:17:03.245"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:27.590" endtime="20230125 01:10:27.762"/>
+<status status="PASS" starttime="20230125 15:17:02.937" endtime="20230125 15:17:03.246"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:23.036" endtime="20230125 01:10:27.762"/>
+<status status="PASS" starttime="20230125 15:16:58.788" endtime="20230125 15:17:03.246"/>
 </test>
 <test id="s1-t3" name="Acceder au panier" line="30">
 <kw name="Inspecter panier" library="Panier">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=0</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230125 01:10:27.765" level="INFO">Clicking element 'name=0'.</msg>
-<msg timestamp="20230125 01:10:28.540" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230125 01:10:28.540" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=109.0.5414.75)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00AAF243]
-	(No symbol) [0x00A37FD1]
-	(No symbol) [0x0092CF10]
-	(No symbol) [0x0095D003]
-	(No symbol) [0x009532A6]
-	(No symbol) [0x0097858C]
-	(No symbol) [0x00952BFF]
-	(No symbol) [0x00978804]
-	(No symbol) [0x0098C9EB]
-	(No symbol) [0x00978386]
-	(No symbol) [0x0095163C]
-	(No symbol) [0x0095269D]
-	GetHandleVerifier [0x00D49A22+2655074]
-	GetHandleVerifier [0x00D3CA24+2601828]
-	GetHandleVerifier [0x00B58C0A+619850]
-	GetHandleVerifier [0x00B57830+614768]
-	(No symbol) [0x00A405FC]
-	(No symbol) [0x00A45968]
-	(No symbol) [0x00A45A55]
-	(No symbol) [0x00A5051B]
-	BaseThreadInitThunk [0x76A800F9+25]
-	RtlGetAppContainerNamedObjectPath [0x77A07BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77A07B8E+238]
-</msg>
-<status status="FAIL" starttime="20230125 01:10:27.764" endtime="20230125 01:10:28.556"/>
-</kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Votre panier</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20230125 01:10:28.556" endtime="20230125 01:10:28.556"/>
+<status status="PASS" starttime="20230125 15:17:03.249" endtime="20230125 15:17:03.312"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="attachSiNoCoverage"]/span/input</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230125 01:10:28.556" endtime="20230125 01:10:28.557"/>
+<msg timestamp="20230125 15:17:03.312" level="INFO">Clicking element '//*[@id="attachSiNoCoverage"]/span/input'.</msg>
+<msg timestamp="20230125 15:17:03.771" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230125 15:17:03.772" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=109.0.5414.119)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0046F243]
+	(No symbol) [0x003F7FD1]
+	(No symbol) [0x002ECF10]
+	(No symbol) [0x0031D003]
+	(No symbol) [0x003132A6]
+	(No symbol) [0x0033858C]
+	(No symbol) [0x00312BFF]
+	(No symbol) [0x00338804]
+	(No symbol) [0x0034C9EB]
+	(No symbol) [0x00338386]
+	(No symbol) [0x0031163C]
+	(No symbol) [0x0031269D]
+	GetHandleVerifier [0x00709A22+2655074]
+	GetHandleVerifier [0x006FCA24+2601828]
+	GetHandleVerifier [0x00518C0A+619850]
+	GetHandleVerifier [0x00517830+614768]
+	(No symbol) [0x004005FC]
+	(No symbol) [0x00405968]
+	(No symbol) [0x00405A55]
+	(No symbol) [0x0041051B]
+	BaseThreadInitThunk [0x76A800F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77A07BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77A07B8E+238]
+</msg>
+<status status="FAIL" starttime="20230125 15:17:03.312" endtime="20230125 15:17:03.780"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="attach-close_sideSheet-link"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230125 01:10:28.557" endtime="20230125 01:10:28.557"/>
+<status status="NOT RUN" starttime="20230125 15:17:03.780" endtime="20230125 15:17:03.781"/>
 </kw>
-<status status="FAIL" starttime="20230125 01:10:27.764" endtime="20230125 01:10:28.557"/>
+<status status="FAIL" starttime="20230125 15:17:03.249" endtime="20230125 15:17:03.781"/>
 </kw>
 <kw name="Valider panier" library="Panier">
-<status status="NOT RUN" starttime="20230125 01:10:28.559" endtime="20230125 01:10:28.559"/>
+<status status="NOT RUN" starttime="20230125 15:17:03.783" endtime="20230125 15:17:03.783"/>
 </kw>
-<status status="FAIL" starttime="20230125 01:10:27.763" endtime="20230125 01:10:28.559">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=109.0.5414.75)
+<status status="FAIL" starttime="20230125 15:17:03.248" endtime="20230125 15:17:03.784">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=109.0.5414.119)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00AAF243]
-	(No symbol) [0x00A37FD1]
-	(No symbol) [0x0092CF10]
-	(No symbol) [0x0095D003]
-	(No symbol) [0x009532A6]
-	(No symbol) [0x0097858C]
-	(No symbol) [0x00952BFF]
-	(No symbol) [0x00978804]
-	(No symbol) [0x0098C9EB]
-	(No symbol) [0x00978386]
-	(No symbol) [0x0095163C]
-	(No symbol) [0x0095269D]
-	GetHandleVerifier [0x00D49A22+2655074]
-	GetHandleVerifier [0x00D3CA24+2601828]
-	GetHandleVerifier [0x00B58C0A+619850]
-	GetHandleVerifier [0x00B57830+614768]
-	(No symbol) [0x00A405FC]
-	(No symbol) [0x00A45968]
-	(No symbol) [0x00A45A55]
-	(No symbol) [0x00A5051B]
+	(No symbol) [0x0046F243]
+	(No symbol) [0x003F7FD1]
+	(No symbol) [0x002ECF10]
+	(No symbol) [0x0031D003]
+	(No symbol) [0x003132A6]
+	(No symbol) [0x0033858C]
+	(No symbol) [0x00312BFF]
+	(No symbol) [0x00338804]
+	(No symbol) [0x0034C9EB]
+	(No symbol) [0x00338386]
+	(No symbol) [0x0031163C]
+	(No symbol) [0x0031269D]
+	GetHandleVerifier [0x00709A22+2655074]
+	GetHandleVerifier [0x006FCA24+2601828]
+	GetHandleVerifier [0x00518C0A+619850]
+	GetHandleVerifier [0x00517830+614768]
+	(No symbol) [0x004005FC]
+	(No symbol) [0x00405968]
+	(No symbol) [0x00405A55]
+	(No symbol) [0x0041051B]
 	BaseThreadInitThunk [0x76A800F9+25]
 	RtlGetAppContainerNamedObjectPath [0x77A07BBE+286]
 	RtlGetAppContainerNamedObjectPath [0x77A07B8E+238]
@@ -250,11 +245,11 @@ Backtrace:
 <kw name="End web Test" library="common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230125 01:10:28.568" endtime="20230125 01:10:31.313"/>
+<status status="PASS" starttime="20230125 15:17:03.800" endtime="20230125 15:17:06.112"/>
 </kw>
-<status status="PASS" starttime="20230125 01:10:28.568" endtime="20230125 01:10:31.313"/>
+<status status="PASS" starttime="20230125 15:17:03.800" endtime="20230125 15:17:06.112"/>
 </kw>
-<status status="FAIL" starttime="20230125 01:10:15.303" endtime="20230125 01:10:31.313"/>
+<status status="FAIL" starttime="20230125 15:16:50.990" endtime="20230125 15:17:06.112"/>
 </suite>
 <statistics>
 <total>
