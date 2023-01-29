@@ -42,5 +42,5 @@ Put a reference on a basket
     Wait Until Page Contains     Référence : 15101
     Click Element     //*[@id="isg-product-offer-container"]/form/div[2]/button/span
     Wait Until Page Contains     Référence : 15101
-    Click Element     //*[@id="isg-header-cart"]/a
+    Click Element     id=isg-header-cart
     #Click Element     //*[@id="isg-product-offer-container"]/form/div[2]/button

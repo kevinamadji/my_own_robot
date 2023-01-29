@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230129 13:44:39.621" rpa="false" schemaversion="3">
+<suite id="s1" name="String" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests\String.robot">
+<test id="s1-t1" name="Convertir en miniscule" line="10">
+<kw name="Convert To Lower Case" library="String">
+<var>${str1}</var>
+<arg>ABBC</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20230129 13:44:39.652" level="INFO">${str1} = abbc</msg>
+<status status="PASS" starttime="20230129 13:44:39.651" endtime="20230129 13:44:39.652"/>
+</kw>
+<kw name="Convert To Upper Case" library="String">
+<var>${str2}</var>
+<arg>kevin</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20230129 13:44:39.652" level="INFO">${str2} = KEVIN</msg>
+<status status="PASS" starttime="20230129 13:44:39.652" endtime="20230129 13:44:39.652"/>
+</kw>
+<kw name="Should Be Lower Case" library="String">
+<arg>${str1}</arg>
+<doc>Fails if the given ``string`` is not in lower case.</doc>
+<status status="PASS" starttime="20230129 13:44:39.653" endtime="20230129 13:44:39.653"/>
+</kw>
+<kw name="Should Be Upper Case" library="String">
+<arg>${str2}</arg>
+<doc>Fails if the given ``string`` is not in upper case.</doc>
+<status status="PASS" starttime="20230129 13:44:39.653" endtime="20230129 13:44:39.654"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str1}</arg>
+<arg>abbc</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230129 13:44:39.654" endtime="20230129 13:44:39.654"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str2}</arg>
+<arg>KEVIN</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230129 13:44:39.654" endtime="20230129 13:44:39.655"/>
+</kw>
+<status status="PASS" starttime="20230129 13:44:39.651" endtime="20230129 13:44:39.655"/>
+</test>
+<test id="s1-t2" name="Convertir en majuscule" line="18">
+<kw name="Convert To Upper Case" library="String">
+<var>${str1}</var>
+<arg>leo</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20230129 13:44:39.658" level="INFO">${str1} = LEO</msg>
+<status status="PASS" starttime="20230129 13:44:39.658" endtime="20230129 13:44:39.658"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${str2}</var>
+<arg>CATHERINE</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20230129 13:44:39.659" level="INFO">${str2} = catherine</msg>
+<status status="PASS" starttime="20230129 13:44:39.659" endtime="20230129 13:44:39.659"/>
+</kw>
+<kw name="Should Be Upper Case" library="String">
+<arg>${str1}</arg>
+<doc>Fails if the given ``string`` is not in upper case.</doc>
+<status status="PASS" starttime="20230129 13:44:39.659" endtime="20230129 13:44:39.660"/>
+</kw>
+<kw name="Should Be Lower Case" library="String">
+<arg>${str2}</arg>
+<doc>Fails if the given ``string`` is not in lower case.</doc>
+<status status="PASS" starttime="20230129 13:44:39.660" endtime="20230129 13:44:39.660"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str1}</arg>
+<arg>LEO</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230129 13:44:39.660" endtime="20230129 13:44:39.661"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str2}</arg>
+<arg>catherine</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230129 13:44:39.661" endtime="20230129 13:44:39.661"/>
+</kw>
+<status status="PASS" starttime="20230129 13:44:39.657" endtime="20230129 13:44:39.661"/>
+</test>
+<test id="s1-t3" name="Generation d'un chaine random" line="26">
+<kw name="Generate Random String" library="String">
+<var>${mot}</var>
+<arg>12</arg>
+<arg>[LOWER]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230129 13:44:39.663" level="INFO">${mot} = xahpwfxalgen</msg>
+<status status="PASS" starttime="20230129 13:44:39.663" endtime="20230129 13:44:39.663"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mot}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.663" level="INFO">xahpwfxalgen</msg>
+<status status="PASS" starttime="20230129 13:44:39.663" endtime="20230129 13:44:39.663"/>
+</kw>
+<kw name="Generate Random String" library="String">
+<var>${mot2}</var>
+<arg>4-10</arg>
+<arg>[UPPER]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230129 13:44:39.664" level="INFO">${mot2} = HIXXFVWGTQ</msg>
+<status status="PASS" starttime="20230129 13:44:39.663" endtime="20230129 13:44:39.664"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mot2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.664" level="INFO">HIXXFVWGTQ</msg>
+<status status="PASS" starttime="20230129 13:44:39.664" endtime="20230129 13:44:39.664"/>
+</kw>
+<status status="PASS" starttime="20230129 13:44:39.662" endtime="20230129 13:44:39.664"/>
+</test>
+<test id="s1-t4" name="Supprimer une chaine" line="32">
+<kw name="Remove String" library="String">
+<var>${str}</var>
+<arg>Amadji ke</arg>
+<arg>vin</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230129 13:44:39.666" level="INFO">${str} = Amadji ke</msg>
+<status status="PASS" starttime="20230129 13:44:39.666" endtime="20230129 13:44:39.666"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str}</arg>
+<arg>Amadji ke</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230129 13:44:39.666" endtime="20230129 13:44:39.667"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${str}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.667" level="INFO">Amadji ke</msg>
+<status status="PASS" starttime="20230129 13:44:39.667" endtime="20230129 13:44:39.667"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${str2}</var>
+<arg>Robot Framework</arg>
+<arg>o</arg>
+<arg>bt</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230129 13:44:39.667" level="INFO">${str2} = R Framewrk</msg>
+<status status="PASS" starttime="20230129 13:44:39.667" endtime="20230129 13:44:39.667"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${str2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.668" level="INFO">R Framewrk</msg>
+<status status="PASS" starttime="20230129 13:44:39.667" endtime="20230129 13:44:39.668"/>
+</kw>
+<status status="PASS" starttime="20230129 13:44:39.665" endtime="20230129 13:44:39.668"/>
+</test>
+<test id="s1-t5" name="Remplacer une chaine" line="39">
+<kw name="Replace String" library="String">
+<var>${str}</var>
+<arg>Hello wold</arg>
+<arg>wold</arg>
+<arg>kevin !</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230129 13:44:39.669" level="INFO">${str} = Hello kevin !</msg>
+<status status="PASS" starttime="20230129 13:44:39.669" endtime="20230129 13:44:39.669"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${str}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.669" level="INFO">Hello kevin !</msg>
+<status status="PASS" starttime="20230129 13:44:39.669" endtime="20230129 13:44:39.670"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${str2}</var>
+<arg>je suis un dev</arg>
+<arg>dev</arg>
+<arg>testeur!</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230129 13:44:39.670" level="INFO">${str2} = je suis un testeur!</msg>
+<status status="PASS" starttime="20230129 13:44:39.670" endtime="20230129 13:44:39.670"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${str2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 13:44:39.670" level="INFO">je suis un testeur!</msg>
+<status status="PASS" starttime="20230129 13:44:39.670" endtime="20230129 13:44:39.670"/>
+</kw>
+<status status="PASS" starttime="20230129 13:44:39.669" endtime="20230129 13:44:39.671"/>
+</test>
+<status status="PASS" starttime="20230129 13:44:39.623" endtime="20230129 13:44:39.671"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="String">String</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
