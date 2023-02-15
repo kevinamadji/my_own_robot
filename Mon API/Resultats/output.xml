@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230215 16:56:14.988" rpa="false" schemaversion="3">
+<suite id="s1" name="Api" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Mon API\Tests\api.robot">
+<test id="s1-t1" name="Inscrire un utilisateur" line="7">
+<kw name="Verifier si l'utilisateur n'existe pas dans la bd" library="signupBack">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
+<arg>pymysql</arg>
+<arg>database='demo', user='root', password='', host = 'localhost'</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using the map string `db_custom_param_string`.</doc>
+<msg timestamp="20230215 16:56:15.430" level="INFO">Executing : Connect To Database Using Custom Params : pymysql.connect(db_api_2.connect(database='demo', user='root', password='', host = 'localhost')) </msg>
+<status status="PASS" starttime="20230215 16:56:15.407" endtime="20230215 16:56:15.463"/>
+</kw>
+<kw name="Row Count Is 0" library="DatabaseLibrary">
+<arg>select id from users where username = '${USERNAME}' and password = md5('${PASSWORD}')</arg>
+<doc>Check if any rows are returned from the submitted `selectStatement`. If there are, then this will throw an
+AssertionError. Set optional input `sansTran` to True to run command without an explicit transaction commit or
+rollback.</doc>
+<msg timestamp="20230215 16:56:15.463" level="INFO">Executing : Row Count Is 0  |  select id from users where username = 'john' and password = md5('doe') </msg>
+<msg timestamp="20230215 16:56:15.463" level="INFO">Executing : Row Count  |  select id from users where username = 'john' and password = md5('doe') </msg>
+<status status="PASS" starttime="20230215 16:56:15.463" endtime="20230215 16:56:15.464"/>
+</kw>
+<status status="PASS" starttime="20230215 16:56:15.406" endtime="20230215 16:56:15.464"/>
+</kw>
+<kw name="Inscription utilisateur" library="signupBack">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>session1</arg>
+<arg>${WEBSITE_LINK}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230215 16:56:15.465" level="INFO">Creating Session using : alias=session1, url=http://localhost/demo/api/user, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230215 16:56:15.465" endtime="20230215 16:56:15.466"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${data}</var>
+<arg>username = ${USERNAME}</arg>
+<arg>password = ${PASSWORD}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230215 16:56:15.466" level="INFO">${data} = {'username ': ' john', 'password ': ' doe'}</msg>
+<status status="PASS" starttime="20230215 16:56:15.466" endtime="20230215 16:56:15.466"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-Type=application/x-www-form-urlenooded</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230215 16:56:15.466" level="INFO">${header} = {'Content-Type': 'application/x-www-form-urlenooded'}</msg>
+<status status="PASS" starttime="20230215 16:56:15.466" endtime="20230215 16:56:15.466"/>
+</kw>
+<kw name="POST" library="RequestsLibrary">
+<var>${response}</var>
+<arg>http://localhost/demo/api/user</arg>
+<arg>data=${data}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request.</doc>
+<msg timestamp="20230215 16:56:15.566" level="INFO">POST Request : url=http://localhost/demo/api/user (redirected) 
+ path_url=/demo/api/user 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/x-www-form-urlenooded', 'Content-Length': '30'} 
+ body=username+=+john&amp;password+=+doe 
+ </msg>
+<msg timestamp="20230215 16:56:15.566" level="INFO">GET Response : url=http://localhost/demo/api/user/ 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 15 Feb 2023 15:56:15 GMT', 'Server': 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/7.4.30', 'Content-Length': '1214', 'Keep-Alive': 'timeout=5, max=99', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html;charset=UTF-8'} 
+ body=&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Index of /demo/api/user&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+&lt;h1&gt;Index of /demo/api/user&lt;/h1&gt;
+  &lt;table&gt;
+   &lt;tr&gt;&lt;th valign="top"&gt;&lt;img src="/icons/blank.gif" alt="[ICO]"&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=N;O=D"&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=M;O=A"&gt;Last modified&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=S;O=A"&gt;Size&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="?C=D;O=A"&gt;Description&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan="5"&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/back.gif" alt="[PARENTDIR]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="/demo/api/"&gt;Parent Directory&lt;/a&gt;       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="right"&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/text.gif" alt="[TXT]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="login.php"&gt;login.php&lt;/a&gt;              &lt;/td&gt;&lt;td align="right"&gt;2023-01-28 22:25  &lt;/td&gt;&lt;td align="right"&gt;1.0K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign="top"&gt;&lt;img src="/icons/text.gif" alt="[TXT]"&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="signup.php"&gt;signup.php&lt;/a&gt;             &lt;/td&gt;&lt;td align="right"&gt;2023-01-28 22:25  &lt;/td&gt;&lt;td align="right"&gt;765 &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan="5"&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;address&gt;Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/7.4.30 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+ 
+ </msg>
+<msg timestamp="20230215 16:56:15.566" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230215 16:56:15.467" endtime="20230215 16:56:15.566"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${json}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230215 16:56:15.567" level="FAIL">Resolving variable '${response.json()}' failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</msg>
+<status status="FAIL" starttime="20230215 16:56:15.566" endtime="20230215 16:56:15.567"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${json}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230215 16:56:15.567" endtime="20230215 16:56:15.567"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230215 16:56:15.567" endtime="20230215 16:56:15.567"/>
+</kw>
+<status status="FAIL" starttime="20230215 16:56:15.465" endtime="20230215 16:56:15.567"/>
+</kw>
+<kw name="Verifier que l'utilisateur est ajouter à la bd" library="signupBack">
+<status status="NOT RUN" starttime="20230215 16:56:15.568" endtime="20230215 16:56:15.568"/>
+</kw>
+<tag>First</tag>
+<status status="FAIL" starttime="20230215 16:56:15.406" endtime="20230215 16:56:15.568">Resolving variable '${response.json()}' failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)</status>
+</test>
+<status status="FAIL" starttime="20230215 16:56:14.990" endtime="20230215 16:56:15.570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">First</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Api">Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
