@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230216 14:25:28.988" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230216 14:35:01.132" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet test ISG\Tests">
 <suite id="s1-s1" name="Main" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet test ISG\Tests\Main.robot">
 <kw name="Start testing" library="Commons" type="SETUP">
@@ -7,178 +7,178 @@
 <arg>about:blank</arg>
 <arg>${nav}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230216 14:25:29.332" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230216 14:25:29.330" endtime="20230216 14:25:31.121"/>
+<msg timestamp="20230216 14:35:01.758" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230216 14:35:01.756" endtime="20230216 14:35:05.092"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230216 14:25:31.121" endtime="20230216 14:25:31.243"/>
+<status status="PASS" starttime="20230216 14:35:05.095" endtime="20230216 14:35:05.283"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:29.329" endtime="20230216 14:25:31.244"/>
+<status status="PASS" starttime="20230216 14:35:01.756" endtime="20230216 14:35:05.286"/>
 </kw>
 <test id="s1-s1-t1" name="launch isg" line="11">
 <kw name="Loard google" library="GotoIsg">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230216 14:25:31.249" level="INFO">Opening url 'https://www.google.com/'</msg>
-<status status="PASS" starttime="20230216 14:25:31.249" endtime="20230216 14:25:31.833"/>
+<msg timestamp="20230216 14:35:05.335" level="INFO">Opening url 'https://www.google.com/'</msg>
+<status status="PASS" starttime="20230216 14:35:05.335" endtime="20230216 14:35:05.925"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="L2AGLb"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:31.834" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
-<status status="PASS" starttime="20230216 14:25:31.833" endtime="20230216 14:25:31.900"/>
+<msg timestamp="20230216 14:35:05.934" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
+<status status="PASS" starttime="20230216 14:35:05.928" endtime="20230216 14:35:05.994"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Google</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:31.900" endtime="20230216 14:25:31.913"/>
+<status status="PASS" starttime="20230216 14:35:05.994" endtime="20230216 14:35:06.009"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:31.248" endtime="20230216 14:25:31.913"/>
+<status status="PASS" starttime="20230216 14:35:05.334" endtime="20230216 14:35:06.009"/>
 </kw>
 <kw name="Search Bruneau" library="GotoIsg">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230216 14:25:31.914" endtime="20230216 14:25:31.959"/>
+<status status="PASS" starttime="20230216 14:35:06.013" endtime="20230216 14:35:06.060"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
 <arg>${Isg}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:31.960" level="INFO">Typing text 'Bruneau' into text field 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20230216 14:25:31.959" endtime="20230216 14:25:32.344"/>
+<msg timestamp="20230216 14:35:06.061" level="INFO">Typing text 'Bruneau' into text field 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230216 14:35:06.061" endtime="20230216 14:35:06.283"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class=gNO89b</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:32.345" level="INFO">Clicking element 'class=gNO89b'.</msg>
-<status status="PASS" starttime="20230216 14:25:32.344" endtime="20230216 14:25:34.449"/>
+<msg timestamp="20230216 14:35:06.283" level="INFO">Clicking element 'class=gNO89b'.</msg>
+<status status="PASS" starttime="20230216 14:35:06.283" endtime="20230216 14:35:08.478"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Images</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:34.449" endtime="20230216 14:25:34.485"/>
+<status status="PASS" starttime="20230216 14:35:08.481" endtime="20230216 14:35:08.517"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:31.913" endtime="20230216 14:25:34.485"/>
+<status status="PASS" starttime="20230216 14:35:06.012" endtime="20230216 14:35:08.517"/>
 </kw>
 <kw name="Go to Bruneau.fr" library="GotoIsg">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:34.487" level="INFO">Clicking element '//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]/span'.</msg>
-<status status="PASS" starttime="20230216 14:25:34.486" endtime="20230216 14:25:35.415"/>
+<msg timestamp="20230216 14:35:08.523" level="INFO">Clicking element '//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]/span'.</msg>
+<status status="PASS" starttime="20230216 14:35:08.520" endtime="20230216 14:35:10.502"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Bruneau</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:35.415" endtime="20230216 14:25:35.491"/>
+<status status="PASS" starttime="20230216 14:35:10.504" endtime="20230216 14:35:10.538"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230216 14:25:37.505" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230216 14:25:35.491" endtime="20230216 14:25:37.505"/>
+<msg timestamp="20230216 14:35:12.545" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230216 14:35:10.539" endtime="20230216 14:35:12.545"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:34.486" endtime="20230216 14:25:37.505"/>
+<status status="PASS" starttime="20230216 14:35:08.519" endtime="20230216 14:35:12.546"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:31.244" endtime="20230216 14:25:37.506"/>
+<status status="PASS" starttime="20230216 14:35:05.296" endtime="20230216 14:35:12.552"/>
 </test>
 <test id="s1-s1-t2" name="Search some product &amp; put it on the basket" line="16">
 <kw name="Search a reference" library="GotoIsg">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="onetrust-accept-btn-container"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:37.509" level="INFO">Clicking element '//*[@id="onetrust-accept-btn-container"]'.</msg>
-<status status="PASS" starttime="20230216 14:25:37.508" endtime="20230216 14:25:37.599"/>
+<msg timestamp="20230216 14:35:12.558" level="INFO">Clicking element '//*[@id="onetrust-accept-btn-container"]'.</msg>
+<status status="PASS" starttime="20230216 14:35:12.556" endtime="20230216 14:35:12.630"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="isg-header-search"]/form/div/input</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:37.601" level="INFO">Clicking element '//*[@id="isg-header-search"]/form/div/input'.</msg>
-<status status="PASS" starttime="20230216 14:25:37.600" endtime="20230216 14:25:38.102"/>
+<msg timestamp="20230216 14:35:12.630" level="INFO">Clicking element '//*[@id="isg-header-search"]/form/div/input'.</msg>
+<status status="PASS" starttime="20230216 14:35:12.630" endtime="20230216 14:35:13.346"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>//*[@id="isg-header-search"]/form/div/input</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230216 14:25:38.102" endtime="20230216 14:25:38.129"/>
+<status status="PASS" starttime="20230216 14:35:13.346" endtime="20230216 14:35:13.404"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="isg-header-search"]/form/div/input</arg>
 <arg>15101</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:38.130" level="INFO">Typing text '15101' into text field '//*[@id="isg-header-search"]/form/div/input'.</msg>
-<status status="PASS" starttime="20230216 14:25:38.129" endtime="20230216 14:25:38.213"/>
+<msg timestamp="20230216 14:35:13.405" level="INFO">Typing text '15101' into text field '//*[@id="isg-header-search"]/form/div/input'.</msg>
+<status status="PASS" starttime="20230216 14:35:13.405" endtime="20230216 14:35:13.478"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="isg-header-search"]/form/button[2]/i</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:38.214" level="INFO">Clicking element '//*[@id="isg-header-search"]/form/button[2]/i'.</msg>
-<status status="PASS" starttime="20230216 14:25:38.213" endtime="20230216 14:25:38.289"/>
+<msg timestamp="20230216 14:35:13.478" level="INFO">Clicking element '//*[@id="isg-header-search"]/form/button[2]/i'.</msg>
+<status status="PASS" starttime="20230216 14:35:13.478" endtime="20230216 14:35:13.547"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Référence : 15101</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:38.290" endtime="20230216 14:25:39.602"/>
+<status status="PASS" starttime="20230216 14:35:13.547" endtime="20230216 14:35:16.026"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:37.508" endtime="20230216 14:25:39.602"/>
+<status status="PASS" starttime="20230216 14:35:12.555" endtime="20230216 14:35:16.031"/>
 </kw>
 <kw name="Put a reference on a basket" library="GotoIsg">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:39.604" level="INFO">Clicking element '//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input'.</msg>
-<status status="PASS" starttime="20230216 14:25:39.604" endtime="20230216 14:25:39.860"/>
+<msg timestamp="20230216 14:35:16.046" level="INFO">Clicking element '//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input'.</msg>
+<status status="PASS" starttime="20230216 14:35:16.041" endtime="20230216 14:35:16.844"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230216 14:25:39.860" endtime="20230216 14:25:39.988"/>
+<status status="PASS" starttime="20230216 14:35:16.844" endtime="20230216 14:35:17.112"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input</arg>
 <arg>10</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:39.989" level="INFO">Typing text '10' into text field '//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input'.</msg>
-<status status="PASS" starttime="20230216 14:25:39.989" endtime="20230216 14:25:40.406"/>
+<msg timestamp="20230216 14:35:17.115" level="INFO">Typing text '10' into text field '//*[@id="isg-product-offer-quantity"]/div/div/span[2]/input'.</msg>
+<status status="PASS" starttime="20230216 14:35:17.112" endtime="20230216 14:35:17.589"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Référence : 15101</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:40.406" endtime="20230216 14:25:40.415"/>
+<status status="PASS" starttime="20230216 14:35:17.589" endtime="20230216 14:35:17.601"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="isg-product-offer-container"]/form/div[2]/button/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:40.415" level="INFO">Clicking element '//*[@id="isg-product-offer-container"]/form/div[2]/button/span'.</msg>
-<status status="PASS" starttime="20230216 14:25:40.415" endtime="20230216 14:25:40.467"/>
+<msg timestamp="20230216 14:35:17.602" level="INFO">Clicking element '//*[@id="isg-product-offer-container"]/form/div[2]/button/span'.</msg>
+<status status="PASS" starttime="20230216 14:35:17.601" endtime="20230216 14:35:17.654"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Référence : 15101</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230216 14:25:40.467" endtime="20230216 14:25:40.477"/>
+<status status="PASS" starttime="20230216 14:35:17.654" endtime="20230216 14:35:17.663"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=isg-header-cart</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230216 14:25:40.478" level="INFO">Clicking element 'id=isg-header-cart'.</msg>
-<status status="PASS" starttime="20230216 14:25:40.478" endtime="20230216 14:25:40.525"/>
+<msg timestamp="20230216 14:35:17.664" level="INFO">Clicking element 'id=isg-header-cart'.</msg>
+<status status="PASS" starttime="20230216 14:35:17.663" endtime="20230216 14:35:17.714"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:39.603" endtime="20230216 14:25:40.526"/>
+<status status="PASS" starttime="20230216 14:35:16.037" endtime="20230216 14:35:17.716"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:37.507" endtime="20230216 14:25:40.526"/>
+<status status="PASS" starttime="20230216 14:35:12.554" endtime="20230216 14:35:17.721"/>
 </test>
 <kw name="End testing" library="Commons" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230216 14:25:40.529" endtime="20230216 14:25:42.905"/>
+<status status="PASS" starttime="20230216 14:35:17.727" endtime="20230216 14:35:20.362"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:40.528" endtime="20230216 14:25:42.905"/>
+<status status="PASS" starttime="20230216 14:35:17.726" endtime="20230216 14:35:20.362"/>
 </kw>
-<status status="PASS" starttime="20230216 14:25:29.020" endtime="20230216 14:25:42.905"/>
+<status status="PASS" starttime="20230216 14:35:01.258" endtime="20230216 14:35:20.362"/>
 </suite>
-<status status="PASS" starttime="20230216 14:25:28.989" endtime="20230216 14:25:42.908"/>
+<status status="PASS" starttime="20230216 14:35:01.154" endtime="20230216 14:35:20.365"/>
 </suite>
 <statistics>
 <total>
