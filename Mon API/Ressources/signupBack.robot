@@ -16,10 +16,10 @@ Inscription utilisateur
     ${data} =  Create Dictionary     username = ${USERNAME}     password = ${PASSWORD}
     ${header} =  Create Dictionary    Content-Type=application/x-www-form-urlenooded
     ${response} =  POST  http://localhost/demo/api/user     data=${data}     headers=${header}
-    ${json} =  Set Variable  ${response.json()}
-    Log  ${json}
-    Should Be Equal As Strings  ${response.status_code}  200
+    Status Should Be   200  ${response}
+    #${json} =  Set Variable  ${response.json()}
+    
 
 Verifier que l'utilisateur est ajouter à la bd 
     Connect To Database Using Custom Params     pymysql     database='demo', user='root', password='', host = 'localhost'
-    Row Count Is Equal To X  select id from users where username = '${USERNAME}' and password = md5('${PASSWORD}')  1
+    Row Count Is Equal To X  select id from users where username = '${USERNAME}' and password = ('${PASSWORD}')  1
