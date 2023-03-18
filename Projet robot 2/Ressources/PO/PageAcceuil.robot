@@ -14,12 +14,12 @@ Chercher le site amazone
     Input Text     xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input     amazon 
     #Mouse Down     id=hplogo
     #Mouse Out      id=hplogo
-    Click Element     class=gNO89b
+    Click Element     xpath=//*[@id="gbqfbb"]
     Wait Until Page Contains     Images
 
 
 Naviger vers le site amazon
-    Click Element     xpath=//*[@id="tads"]/div/div/div/div/div[1]/a/div[1]
+    Click Element     id=twotabsearchtextbox
     Wait Until Page Contains     Coupons
 
 
