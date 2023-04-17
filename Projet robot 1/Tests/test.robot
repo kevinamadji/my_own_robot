@@ -29,3 +29,7 @@ Liste
     Log     @{Nom2}
     Log     @{Nom1}
     Log     @{multilist} [1:3]
+
+Dictionaire
+    ${dico} =     Create Dictionary     login=kevin     mdp=bauer
+    log     ${dico} [login]

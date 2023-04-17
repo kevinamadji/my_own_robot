@@ -1,76 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230318 20:50:06.827" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.9.10 on win32)" generated="20230417 16:07:52.659" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="C:\Users\Golden boy\OneDrive - H3 Campus\Bureau\my_own_robot\Projet robot 1\Tests\test.robot">
 <test id="s1-t1" name="Constante" line="19">
 <kw name="Log" library="BuiltIn">
 <arg>hello</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.056" level="INFO">hello</msg>
-<status status="PASS" starttime="20230318 20:50:07.056" endtime="20230318 20:50:07.056"/>
+<msg timestamp="20230417 16:07:52.946" level="INFO">hello</msg>
+<status status="PASS" starttime="20230417 16:07:52.946" endtime="20230417 16:07:52.946"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>hello word</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.056" level="INFO">hello word</msg>
-<status status="PASS" starttime="20230318 20:50:07.056" endtime="20230318 20:50:07.057"/>
+<msg timestamp="20230417 16:07:52.947" level="INFO">hello word</msg>
+<status status="PASS" starttime="20230417 16:07:52.947" endtime="20230417 16:07:52.947"/>
 </kw>
-<status status="PASS" starttime="20230318 20:50:07.055" endtime="20230318 20:50:07.057"/>
+<status status="PASS" starttime="20230417 16:07:52.945" endtime="20230417 16:07:52.947"/>
 </test>
 <test id="s1-t2" name="Variable" line="23">
 <kw name="Log" library="BuiltIn">
 <arg>${Salut} ${nom}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.060" level="INFO">hello kevin</msg>
-<status status="PASS" starttime="20230318 20:50:07.059" endtime="20230318 20:50:07.060"/>
+<msg timestamp="20230417 16:07:52.950" level="INFO">hello kevin</msg>
+<status status="PASS" starttime="20230417 16:07:52.950" endtime="20230417 16:07:52.950"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${multiligne}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.060" level="INFO">Ligne 1
+<msg timestamp="20230417 16:07:52.951" level="INFO">Ligne 1
 ligne 2
 ligne 3
 ligne 4</msg>
-<status status="PASS" starttime="20230318 20:50:07.060" endtime="20230318 20:50:07.060"/>
+<status status="PASS" starttime="20230417 16:07:52.951" endtime="20230417 16:07:52.951"/>
 </kw>
-<status status="PASS" starttime="20230318 20:50:07.059" endtime="20230318 20:50:07.061"/>
+<status status="PASS" starttime="20230417 16:07:52.949" endtime="20230417 16:07:52.951"/>
 </test>
 <test id="s1-t3" name="Liste" line="27">
 <kw name="Log" library="BuiltIn">
 <arg>@{user}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.063" level="INFO">goldenboy barlax massmass</msg>
-<status status="PASS" starttime="20230318 20:50:07.063" endtime="20230318 20:50:07.063"/>
+<msg timestamp="20230417 16:07:52.953" level="INFO">goldenboy barlax massmass</msg>
+<status status="PASS" starttime="20230417 16:07:52.953" endtime="20230417 16:07:52.953"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>@{Nom2}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.064" level="INFO">['John Doe ana'] Richard</msg>
-<status status="PASS" starttime="20230318 20:50:07.064" endtime="20230318 20:50:07.064"/>
+<msg timestamp="20230417 16:07:52.954" level="INFO">['John Doe ana'] Richard</msg>
+<status status="PASS" starttime="20230417 16:07:52.954" endtime="20230417 16:07:52.955"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>@{Nom1}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.065" level="INFO">John Doe ana</msg>
-<status status="PASS" starttime="20230318 20:50:07.065" endtime="20230318 20:50:07.065"/>
+<msg timestamp="20230417 16:07:52.956" level="INFO">John Doe ana</msg>
+<status status="PASS" starttime="20230417 16:07:52.955" endtime="20230417 16:07:52.956"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>@{multilist} [1:3]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230318 20:50:07.065" level="INFO">['Ethan', 'kylian', 'Enzo', 'Lucas', 'Rayane', 'Sitraka'] [1:3]</msg>
-<status status="PASS" starttime="20230318 20:50:07.065" endtime="20230318 20:50:07.065"/>
+<msg timestamp="20230417 16:07:52.957" level="INFO">['Ethan', 'kylian', 'Enzo', 'Lucas', 'Rayane', 'Sitraka'] [1:3]</msg>
+<status status="PASS" starttime="20230417 16:07:52.956" endtime="20230417 16:07:52.957"/>
 </kw>
-<status status="PASS" starttime="20230318 20:50:07.062" endtime="20230318 20:50:07.065"/>
+<status status="PASS" starttime="20230417 16:07:52.952" endtime="20230417 16:07:52.958"/>
 </test>
-<status status="PASS" starttime="20230318 20:50:06.831" endtime="20230318 20:50:07.066"/>
+<test id="s1-t4" name="Dictionaire" line="33">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${dico}</var>
+<arg>login=kevin</arg>
+<arg>mdp=bauer</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230417 16:07:52.961" level="INFO">${dico} = {'login': 'kevin', 'mdp': 'bauer'}</msg>
+<status status="PASS" starttime="20230417 16:07:52.960" endtime="20230417 16:07:52.961"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${dico} [login]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230417 16:07:52.962" level="INFO">{'login': 'kevin', 'mdp': 'bauer'} [login]</msg>
+<status status="PASS" starttime="20230417 16:07:52.962" endtime="20230417 16:07:52.962"/>
+</kw>
+<status status="PASS" starttime="20230417 16:07:52.960" endtime="20230417 16:07:52.963"/>
+</test>
+<status status="PASS" starttime="20230417 16:07:52.662" endtime="20230417 16:07:52.964"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
